@@ -21,3 +21,12 @@ class Products {
         return this.price * (100 - discount / 100)
      }
 }
+
+const watch = new Products("Relogio de pulso", "...", 100)
+watch.addToStock(99)
+
+const priceWithDiscount = watch.calculateDiscount(15)
+
+
+console.log(watch)
+console.log(priceWithDiscount)
